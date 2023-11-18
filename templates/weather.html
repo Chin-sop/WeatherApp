@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Weather Dashboard - Weather Details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Weather Details</title>
+    <link rel="stylesheet" href="/static/css/style1.css">
 </head>
 <body>
-    <h1>Weather Details</h1>
-    <h2>{{ city }}</h2>
-    <p>Current Temperature: {{ temp }}°C</p>
-    <!-- Add more weather details here -->
+    <section class="weather-info">
+        <h1>{{ city }} - {{ weather }}</h1>
+        <p>{{ description }}</p>
+    </section>
+    
+    <section class="weather-data">
+        <div>Temperature: {{ temperature }} &#8451;</div>
+        <div>Feels Like: {{ feels_like }} &#8451;</div>
+        <div>Humidity: {{ humidity }}%</div>
+        <div>Wind Speed: {{ wind_speed }} m/s</div>
+    </section>
 </body>
 </html>
